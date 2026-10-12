@@ -7,7 +7,7 @@
     <h5 class="fw-bold mb-3">New Course</h5>
     <form action="{{ route('courses.store') }}" method="POST">
         @csrf
-        @include('courses._form', ['buttonText' => 'Save Course'])
+        @include('courses.form', ['buttonText' => 'Save Course'])
     </form>
 </div>
 @endsection

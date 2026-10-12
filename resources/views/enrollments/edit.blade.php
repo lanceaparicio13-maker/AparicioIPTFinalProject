@@ -10,7 +10,7 @@
     <form action="{{ route('enrollments.update', $enrollment) }}" method="POST">
         @csrf
         @method('PUT')
-        @include('enrollments._form', ['buttonText' => 'Update Enrollment'])
+        @include('enrollments.form', ['buttonText' => 'Update Enrollment'])
     </form>
 </div>
 @endsection

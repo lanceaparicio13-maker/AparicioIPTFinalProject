@@ -14,7 +14,7 @@
         @csrf
         @method('PUT')
 
-        @include('students._form', [
+        @include('students.form', [
             'buttonText' => 'Update Student'
         ])
     </form>

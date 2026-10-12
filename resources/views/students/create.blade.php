@@ -13,7 +13,7 @@
     <form action="{{ route('students.store') }}" method="POST">
         @csrf
 
-        @include('students._form', [
+        @include('students.form', [
             'buttonText' => 'Save Student'
         ])
     </form>

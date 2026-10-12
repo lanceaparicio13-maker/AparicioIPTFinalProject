@@ -9,7 +9,7 @@
 
     <form action="{{ route('enrollments.store') }}" method="POST">
         @csrf
-        @include('enrollments._form', ['buttonText' => 'Save Enrollment'])
+        @include('enrollments.form', ['buttonText' => 'Save Enrollment'])
     </form>
 </div>
 @endsection

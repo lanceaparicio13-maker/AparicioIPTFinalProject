@@ -7,7 +7,7 @@
     <h5 class="fw-bold mb-3">New Instrument</h5>
     <form method="POST" action="{{ route('instruments.store') }}">
         @csrf
-        @include('instruments._form', ['buttonText' => 'Save Instrument'])
+        @include('instruments.form', ['buttonText' => 'Save Instrument'])
     </form>
 </div>
 @endsection

@@ -8,7 +8,7 @@
     <form action="{{ route('courses.update', $course) }}" method="POST">
         @csrf
         @method('PUT')
-        @include('courses._form', ['buttonText' => 'Update Course'])
+        @include('courses.form', ['buttonText' => 'Update Course'])
     </form>
 </div>
 @endsection
